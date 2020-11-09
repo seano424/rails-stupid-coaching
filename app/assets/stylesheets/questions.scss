@@ -1,0 +1,53 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Noto+Sans+JP&display=swap");
+
+$turqoise: #03fc96;
+
+body {
+  background-color: #fc03be;
+  font-family: "Montserrat", sans-serif;
+  color:$turqoise;
+}
+
+form {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+input {
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  width: 20vw;
+  height: 5vh;
+  margin-bottom: 4px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.answer {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2px;;
+}
+
+.break {
+  margin-bottom: 4%;
+}
+
+a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: powderblue;
+  }
+}

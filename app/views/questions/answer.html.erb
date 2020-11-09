@@ -1,0 +1,31 @@
+<%# <h1>Here will be an answer</h1> %>
+
+<div class="answer">
+  <% if @answer == "I am going to work" %>
+
+    <p><%= @answer %></p>
+    <p class="break">-You</p>
+
+    <p><strong>Great!</strong></p>
+    <p>-Coach</p>
+    
+  <% elsif @answer.end_with?('?') %>
+
+    <p><%= @answer %></p>
+    <p class="break">-You</p>
+
+    <p><strong>Silly question, get dressed and go to work</strong></p>
+    <p>-Coach</p>
+    
+  <% else %>
+
+    <p><%= @answer %></p>
+    <p class="break">-You</p>
+
+    <p><strong>I don't care, get dressed and go to work</strong></p>
+    <p>-Coach</p>
+    
+  <% end %>
+
+  <%= link_to "Ask a new question", "ask" %>
+</div>
